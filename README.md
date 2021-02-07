@@ -1,5 +1,5 @@
 Hello,
-I am <a target="blank" href="https://github.com/saminyasar004">Samin Yasar</a>. I create a number converter which is help to convert your number as any base. Like (binary to decimal) and many more. You can see it <a target="blank" href="https://converter1.netlify.app/">here</a>
+I am <a target="blank" href="https://github.com/saminyasar004">Samin Yasar</a>. I create a number converter that helps to convert your number to any base. Like (binary to decimal) and many more. You can see it <a target="blank" href="https://converter1.netlify.app/">here</a>
 
 Follow me on:
 

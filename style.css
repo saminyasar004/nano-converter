@@ -1,0 +1,10 @@
+form#formEl {
+  padding: 2% 2%;
+  background: #ddd;
+  margin: 2%;
+  border-radius: 0.5rem;
+}
+
+.form-group {
+  margin: 2%;
+}

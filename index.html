@@ -1,0 +1,99 @@
+<!-- variable type: variableType -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert your number</title>
+    <!-- linking bootstrap css file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- linking css file -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- linking bootstrap js file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- linking js file -->
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <!-- header section start -->
+    <header class="container">
+      <form id="formEl">
+        <div class="form-group">
+          <label for="inputNumber">Enter number</label>
+          <input
+            type="text"
+            id="inputNumber"
+            name="inputNumber"
+            class="form-control form-control-lg"
+            required
+            autofocus
+          />
+        </div>
+        <div class="form-group">
+          <label for="fromBase">From Base</label>
+          <select name="fromBase" id="fromBase" class="form-control">
+            <option value="binary">2 (binary)</option>
+            <option value="octal">8 (octal)</option>
+            <option value="decimal" selected>10 (decimal)</option>
+            <option value="hexadecimal">16 (hex)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="toBase">To base</label>
+          <select name="toBase" id="toBase" class="form-control">
+            <option value="binary" selected>2 (binary)</option>
+            <option value="octal">8 (octal)</option>
+            <option value="decimal">10 (decimal)</option>
+            <option value="hexadecimal">16 (hex)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button
+            type="button"
+            title="Convert"
+            id="btnConvert"
+            class="btn btn-primary"
+          >
+            Convert
+          </button>
+          <button
+            type="reset"
+            title="Reset"
+            id="btnReset"
+            class="btn btn-danger"
+          >
+            Reset
+          </button>
+        </div>
+        <div class="form-group">
+          <label for="outputNumber">Result number</label>
+          <textarea
+            rows="2"
+            id="outputNumber"
+            class="form-control form-control-lg"
+            readonly
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <input
+            type="button"
+            value="Copy"
+            id="btnCopy"
+            class="btn btn-success"
+          />
+        </div>
+      </form>
+    </header>
+    <!-- header section end -->
+  </body>
+</html>

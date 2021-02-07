@@ -3,10 +3,10 @@ I am <a target="blank" href="https://github.com/saminyasar004">Samin Yasar</a>. 
 
 Follow me on:
 
-<a target="blank" href="https://saminyasar.netlify.app/">Website</a>
-<a target="blank" href="https://www.facebook.com/saminyasar004/">Facebook</a>
-<a target="blank" href="https://www.instagram.com/saminyasar04/">Instagram</a>
-<a target="blank" href="https://twitter.com/SaminYa02656579">Twitter</a>
-<a target="blank" href="https://github.com/saminyasar004">Github</a>
+<a target="blank" href="https://saminyasar.netlify.app/">Website</a><br>
+<a target="blank" href="https://www.facebook.com/saminyasar004/">Facebook</a><br>
+<a target="blank" href="https://www.instagram.com/saminyasar04/">Instagram</a><br>
+<a target="blank" href="https://twitter.com/SaminYa02656579">Twitter</a><br>
+<a target="blank" href="https://github.com/saminyasar004">Github</a><br>
 
 Thank You

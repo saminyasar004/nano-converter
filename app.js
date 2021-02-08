@@ -40,35 +40,35 @@ function baseCombineName(x, y) {
   return operationName;
 }
 
-function decimaltobinary(n) {
+function decimalToBinary(n) {
   // function to convert decimal number to binary
   let decimalNumber = n;
   let binaryNumber = parseFloat(decimalNumber.toString(2));
   return binaryNumber;
 }
 
-function binarytodecimal(n) {
+function binaryToDecimal(n) {
   // function to convert binary number to decimal
   let binaryNumber = n;
   let decimalNumber = parseInt(binaryNumber, 2);
   return decimalNumber;
 }
 
-function decimaltooctal(n) {
+function decimalToOctal(n) {
   // function to convert decimal to octal
   let decimalNumber = n;
   let octalNumber = parseFloat(decimalNumber.toString(8));
   return octalNumber;
 }
 
-function octaltodecimal(n) {
+function octalToDecimal(n) {
   // function to convert octal to decimal
   let octalNumber = n;
   let decimalNumber = parseInt(octalNumber, 8);
   return decimalNumber;
 }
 
-function binarytooctal(n) {
+function binaryToOctal(n) {
   // function to convert binary to octal
   let binaryNumber = n;
   let decimalNumber = parseInt(binaryNumber, 2);
@@ -76,7 +76,7 @@ function binarytooctal(n) {
   return octalNumber;
 }
 
-function octaltobinary(n) {
+function octalToBinary(n) {
   // function to convert octal to binary
   let octalNumber = n;
   let decimalNumber = parseInt(octalNumber, 8);
@@ -84,14 +84,14 @@ function octaltobinary(n) {
   return binaryNumber;
 }
 
-function decimaltohexadecimal(n) {
+function decimalToHexadecimal(n) {
   // function to convert decimal to hexadecimal
   let decimalNumber = n;
   let hexadecimalNumber = parseFloat(decimalNumber.toString(16));
   return hexadecimalNumber;
 }
 
-function hexadecimaltodecimal(n) {
+function hexadecimalToDecimal(n) {
   // function to convert hexadecimal to decimal
   let hexadecimalNumber = n;
   let decimalNumber = parseInt(hexadecimalNumber, 16);
@@ -110,30 +110,32 @@ function convertNumber() {
     let result = 0; // final result
     switch (operationName) {
       case "decimaltobinary":
-        result = decimaltobinary(inputValue);
+        result = decimalToBinary(inputValue);
         break;
       case "binarytodecimal":
-        result = binarytodecimal(inputValue);
+        result = binaryToDecimal(inputValue);
         break;
       case "decimaltooctal":
-        result = decimaltooctal(inputValue);
+        result = decimalToOctal(inputValue);
         break;
       case "octaltodecimal":
-        result = octaltodecimal(inputValue);
+        result = octalToDecimal(inputValue);
         break;
       case "binarytooctal":
-        result = binarytooctal(inputValue);
+        result = binaryToOctal(inputValue);
         break;
       case "octaltobinary":
-        result = octaltobinary(inputValue);
+        result = octalToBinary(inputValue);
         break;
       case "decimaltohexadecimal":
-        result = decimaltohexadecimal(inputValue);
+        result = decimalToHexadecimal(inputValue);
         break;
       case "hexadecimaltodecimal":
-        result = hexadecimaltodecimal(inputValue);
+        result = hexadecimalToDecimal(inputValue);
         break;
       default:
+        alert("Sorry this request is not valid.");
+        resetNumber();
         return;
     }
     outputNumberEl.value = result;

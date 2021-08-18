@@ -1,7 +1,6 @@
 # **Nano Converter**
 
-Hello Programmers,
-Here I created a project call **Nano Converter**. Here you can convert any types of number to other types (decimal to binary, binary to decimal ...)
+Convert your number from any base to any base. Like binary to decimal or decimal to binary or decimal to octal or octal to decimal.
 
 [![Website](https://img.shields.io/website?label=saminyasar%20🚀&name=hello&style=flat&url=https://saminyasar.netlify.app/)](https://saminyasar.netlify.app/)
 [![Facebook Follow](https://img.shields.io/badge/Facebook-Follow-brightgreen)](https://www.facebook.com/saminyasar004/)

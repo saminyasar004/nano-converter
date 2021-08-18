@@ -1,106 +1,145 @@
-<!-- variable type: variableType -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Convert your number</title>
-    <!-- linking bootstrap css file -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
-    <!-- linking css file -->
-    <link rel="stylesheet" href="./style.css" />
-    <!-- linking bootstrap js file -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <!-- linking js file -->
-    <script src="./app.js" defer></script>
-  </head>
-  <body>
-    <!-- header section start -->
-    <header class="container">
-      <form id="formEl">
-        <div class="form-group">
-          <label for="inputNumber">Enter number</label>
-          <input
-            type="text"
-            id="inputNumber"
-            name="inputNumber"
-            class="form-control form-control-lg"
-            required
-            autofocus
-          />
-        </div>
-        <div class="form-group">
-          <label for="fromBase">From Base</label>
-          <select name="fromBase" id="fromBase" class="form-control">
-            <option value="binary">2 (binary)</option>
-            <option value="octal">8 (octal)</option>
-            <option value="decimal" selected>10 (decimal)</option>
-            <option value="hexadecimal">16 (hex)</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="toBase">To base</label>
-          <select name="toBase" id="toBase" class="form-control">
-            <option value="binary" selected>2 (binary)</option>
-            <option value="octal">8 (octal)</option>
-            <option value="decimal">10 (decimal)</option>
-            <option value="hexadecimal">16 (hex)</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <button
-            type="button"
-            title="Convert"
-            id="btnConvert"
-            class="btn btn-primary"
-          >
-            Convert
-          </button>
-          <button
-            type="reset"
-            title="Reset"
-            id="btnReset"
-            class="btn btn-danger"
-          >
-            Reset
-          </button>
-        </div>
-        <div class="form-group">
-          <label for="outputNumber">Result number</label>
-          <textarea
-            rows="2"
-            id="outputNumber"
-            class="form-control form-control-lg"
-            readonly
-          ></textarea>
-        </div>
-        <div class="form-group">
-          <input
-            type="button"
-            value="Copy"
-            id="btnCopy"
-            class="btn btn-success"
-          />
-        </div>
-        <div class="form-group">
-          <a
-            target="blank"
-            href="https://github.com/saminyasar004/Number-Converter"
-            >Source Code</a
-          >
-        </div>
-      </form>
-    </header>
-    <!-- header section end -->
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nano Converter</title>
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/app.js" defer></script>
+    </head>
+    <body>
+        <!-- header section start -->
+
+        <header class="header-section">
+            <div class="row">
+                <h1>nano converter</h1>
+            </div>
+        </header>
+
+        <!-- header section end -->
+
+        <!-- number section start -->
+
+        <section class="number-section">
+            <div class="row number-section-heading">
+                <h2>number system conversion</h2>
+            </div>
+            <div class="row number-section-content">
+                <form id="numberFormContainer">
+                    <div class="form-group">
+                        <label for="decimalField">decimal</label>
+                        <input
+                            data-number-base="decimal"
+                            id="decimalField"
+                            type="text"
+                            autocomplete="off"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="binaryField">binary</label>
+                        <input
+                            data-number-base="binary"
+                            id="binaryField"
+                            type="text"
+                            autocomplete="off"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="octalField">octal</label>
+                        <input
+                            data-number-base="octal"
+                            id="octalField"
+                            type="text"
+                            autocomplete="off"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hexadecimalField">hexadecimal</label>
+                        <input
+                            data-number-base="hexadecimal"
+                            id="hexadecimalField"
+                            type="text"
+                            autocomplete="off"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <input
+                            class="btn btn-reset"
+                            type="submit"
+                            value="reset"
+                        />
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- number section end -->
+
+        <!-- text section start -->
+
+        <section class="text-section">
+            <div class="row text-section-heading">
+                <h2>text conversion</h2>
+            </div>
+            <div class="row text-section-content">
+                <form id="textFormContainer">
+                    <div class="form-group">
+                        <label for="textField">enter your text below</label>
+                        <textarea
+                            data-text-base="string"
+                            id="textField"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="binaryTextField"
+                            >enter your binary below (space seperated)</label
+                        >
+                        <textarea
+                            data-text-base="binary"
+                            id="binaryTextField"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input
+                            class="btn btn-reset"
+                            type="submit"
+                            value="reset"
+                        />
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- text section end -->
+
+        <!-- author section start -->
+
+        <footer>
+            <p class="author-text">
+                build with 💜 by
+                <a target="_blank" href="https://saminyasar.netlify.app/"
+                    >samin yasar</a
+                >
+            </p>
+            <p></p>
+        </footer>
+
+        <!-- author section end -->
+    </body>
 </html>
